@@ -8,7 +8,7 @@ namespace ContaDiego
     class ContaBancariatest
     {
 
-        [Fact]
+        [Test]
         public void CriarContaAdicionandoValor()
         {
             var conta = new ContaBancaria(0, "diego", 0, new DateTime(2019, 12, 13, 11, 00, 00));
@@ -17,7 +17,7 @@ namespace ContaDiego
             Assert.Equals(valorAdicionado, conta.GetSaldo());
         }
 
-        [Fact]
+        [Test]
         public void CriarContaRetirandoValor()
         {
             var conta = new ContaBancaria(0, "diego", 0, new DateTime(2019, 12, 13, 11, 00, 00));

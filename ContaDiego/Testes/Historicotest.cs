@@ -8,7 +8,7 @@ namespace ContaDiego
     class Historicotest
     {
         Historico _historico;
-        [Fact]
+        [Test]
         public void TesteCriacaoHistorico()
         {
             _historico = new Historico(1, new Saldo(15.14),new Saldo(24.15), new DateTime(2019, 18, 01));
@@ -16,7 +16,7 @@ namespace ContaDiego
             Assert.Equals(15.14, _historico.saldoAtual.saldo);
         }
 
-        [Fact]
+        [Test]
         public void TesteRespostaHistorico()
         {
             Assert.Equals(2019, _historico.data.Year);
