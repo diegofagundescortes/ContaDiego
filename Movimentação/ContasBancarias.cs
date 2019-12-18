@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Movimentação
 {
-    public partial class Form2 : Form
+    public partial class ContasBancarias : Form
     {
-        public Form2()
+        public ContasBancarias()
         {
             InitializeComponent();
+        }
+
+        private void btnCriarConta_Click(object sender, EventArgs e)
+        {
+            var contaBancaria = new CriarConta();
+            contaBancaria.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Movimentação
 {
-    public partial class Form1 : Form
+    public partial class AdicionarConta : Form
     {
-        public Form1()
+        public AdicionarConta()
         {
             InitializeComponent();
         }

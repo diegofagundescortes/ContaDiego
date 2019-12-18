@@ -1,6 +1,6 @@
 ﻿namespace Movimentação
 {
-    partial class Form2
+    partial class AdicionarConta
     {
         /// <summary>
         /// Required designer variable.
