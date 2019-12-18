@@ -51,5 +51,17 @@ namespace ContaDiego
         {
             return _saldoBancario.saldo;
         }
+        public int NumeroConta()
+        {
+            return _contaBancaria.id;
+        }
+        public string NomeConta()
+        {
+            return _contaBancaria.nome;
+        }
+        public Historico[] GetHistoricos()
+        {
+            return _historicos;
+        }
     }
 }

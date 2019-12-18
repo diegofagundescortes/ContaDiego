@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using Xunit;
 
 namespace ContaDiego
 {
@@ -7,7 +8,7 @@ namespace ContaDiego
     class ContaBancariatest
     {
 
-        [Test]
+        [Fact]
         public void CriarContaAdicionandoValor()
         {
             var conta = new ContaBancaria(0, "diego", 0, new DateTime(2019, 12, 13, 11, 00, 00));
@@ -16,7 +17,7 @@ namespace ContaDiego
             Assert.Equals(valorAdicionado, conta.GetSaldo());
         }
 
-        [Test]
+        [Fact]
         public void CriarContaRetirandoValor()
         {
             var conta = new ContaBancaria(0, "diego", 0, new DateTime(2019, 12, 13, 11, 00, 00));
